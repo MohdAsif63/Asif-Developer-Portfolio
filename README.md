@@ -2,17 +2,32 @@
 
 A personal developer portfolio website showcasing my technical skills, projects, education, and professional background.
 
-## 🌐 Live Demo
+## Live Demo
 
 [Visit My Portfolio](https://mohd-asif-developer-portfolio.netlify.app/)
 
-##  About the Project
+## Portfolio Preview
+
+<table>
+  <tr>
+    <td align="center"><b>Home Section</b></td>
+    <td align="center"><b>Skills Section</b></td>
+    <td align="center"><b>Projects Section</b></td>
+  </tr>
+  <tr>
+    <td><img src="images/portfolio-home.png" width="250"></td>
+    <td><img src="images/portfolio-skills.png" width="250"></td>
+    <td><img src="images/portfolio-projects.png" width="250"></td>
+  </tr>
+</table>
+
+## About the Project
 
 This is my personal portfolio website, designed and developed to present my skills, projects, and journey as a developer.
 
 The website provides an overview of my technical knowledge, academic background, and practical projects in web development and software testing.
 
-##  Features
+## Features
 
 - Responsive design for desktop, tablet, and mobile devices
 - About Me section
@@ -22,14 +37,14 @@ The website provides an overview of my technical knowledge, academic background,
 - Contact section
 - Smooth navigation and interactive elements
 
-##  Technologies Used
+## Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
 - Font Awesome
 
-##  Project Structure
+## Project Structure
 
 ```text
 Asif-Developer-Portfolio/
@@ -39,6 +54,9 @@ Asif-Developer-Portfolio/
 │   ├── E-Commerce.png
 │   ├── SQL.png
 │   ├── weather.png
+│   ├── portfolio-home.png
+│   ├── portfolio-skills.png
+│   ├── portfolio-projects.png
 │   └── profile images
 │
 ├── index.html
@@ -47,7 +65,7 @@ Asif-Developer-Portfolio/
 └── README.md
 ```
 
-##  Run Locally
+## Run Locally
 
 1. Clone the repository:
 
@@ -65,7 +83,7 @@ cd Asif-Developer-Portfolio
 
 No additional dependencies or build tools are required.
 
-## 👨‍💻 Author
+## Author
 
 **Mohd Asif**
 
