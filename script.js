@@ -1,4 +1,4 @@
-// 1. NAVBAR ACTIVE LINK
+// Navbar Active
 
 const navLinks = document.querySelectorAll(".navbar a");
 
@@ -13,7 +13,7 @@ navLinks.forEach((link) => {
 });
 
 
-// 2. MOBILE HAMBURGER MENU
+// Mobile hamburger
 
 const menuIcon = document.querySelector(".menu-icon");
 const navbar = document.querySelector(".navbar");
@@ -46,7 +46,7 @@ navLinks.forEach(function (link) {
 });
 
 
-// 3. SCROLL SPY
+// Scroll functionality
 
 const nav = document.querySelectorAll(".navbar a");
 const sections = document.querySelectorAll("body section");
@@ -88,12 +88,10 @@ sections.forEach(function (sec) {
 });
 
 
-// 4. PROJECT SLIDER
 
 
-// =================================
-// RESPONSIVE PROJECT SLIDER
-// =================================
+// Responsive Slider
+
 
 const nextBtn = document.querySelector("#nextBtn");
 const prevBtn = document.querySelector("#prevBtn");
@@ -104,7 +102,7 @@ const projectContainer = document.querySelector(".projects-container");
 let currIdx = 0;
 
 
-// 1. Screen ke according visible cards count
+// Screen ke according visible cards count
 
 function getVisibleCards() {
 
@@ -120,7 +118,7 @@ function getVisibleCards() {
 }
 
 
-// 2. Slider update function
+// Slider update 
 
 function updateSlider() {
 
@@ -131,28 +129,31 @@ function updateSlider() {
     // Actual card width
     const cardWidth = projectCards[0].getBoundingClientRect().width;
 
+
+
     // Actual gap between cards
     const gap = parseFloat(
         getComputedStyle(projectContainer).gap
     ) || 0;
 
+
+
     // Total movement
     const move = cardWidth + gap;
 
-    // Maximum allowed index
+    
     const maxIndex = Math.max(
         0,
         projectCards.length - getVisibleCards()
     );
 
-    // Index ko valid range mein rakhna
+    
     currIdx = Math.min(currIdx, maxIndex);
 
-    // Move slider
+    
     projectContainer.style.transform =
         `translateX(-${currIdx * move}px)`;
 
-    // Button states
     prevBtn.disabled = currIdx === 0;
 
     nextBtn.disabled = currIdx >= maxIndex;
@@ -160,7 +161,7 @@ function updateSlider() {
 }
 
 
-// 3. Next button
+// Next button
 
 nextBtn.addEventListener("click", function () {
 
@@ -180,7 +181,7 @@ nextBtn.addEventListener("click", function () {
 });
 
 
-// 4. Previous button
+// Previous button
 
 prevBtn.addEventListener("click", function () {
 
@@ -195,7 +196,7 @@ prevBtn.addEventListener("click", function () {
 });
 
 
-// 5. Window resize handling
+// Window resize handling
 
 window.addEventListener("resize", function () {
 
@@ -204,14 +205,12 @@ window.addEventListener("resize", function () {
 });
 
 
-// 6. Initial slider setup
-
 updateSlider();
 
 
 
 
-// 5. CONTACT FORM
+// Contact Form
 
 const contactForm = document.querySelector("#contact-form");
 const successPop = document.querySelector("#success-popup");
@@ -262,7 +261,6 @@ contactForm.addEventListener("submit", function (event) {
 });
 
 
-// Close Success Popup
 
 closePop.addEventListener("click", function () {
 

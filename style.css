@@ -159,11 +159,11 @@ section {
     gap: 12px;
     padding: 16px 32px;
     color: #F8FAFC;
-    background: linear-gradient(135deg, #00D5D5, #007F83);
+    background: linear-gradient(1000deg, #2ed7d7, #038c8f);
     border: 2px solid #00D5D5;
     border-radius: 50px;
-    box-shadow: 0 0 12px rgba(0, 213, 213, 0.3);
-    font-size: 15px;
+    box-shadow: 0 0 6px rgba(0, 213, 213, 0.3);
+    font-size: 16px;
     font-weight: 700;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -602,7 +602,7 @@ h3 span {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 88vh;
     padding: 100px 8%;
 }
 
@@ -710,10 +710,13 @@ h3 span {
     font-size: 20px;
 }
 
+.pointer{
+    caret-color: #00D5D5;
+}
+
 .success-popup {
     position: fixed;
-    top: 0;
-    left: 0;
+    inset: 0;
     z-index: 9999;
     display: none;
     align-items: center;
@@ -1117,18 +1120,26 @@ h3 span {
     .home-image img {
         width: 180px;
         height: 180px;
+        margin-top: -15px;
     }
 
     .home-content h1 {
         font-size: 27px;
+        margin-top: -12px;
     }
 
     .home-content h2 {
         font-size: 17px;
+        margin-top: -13px;
     }
 
     .home-content p {
         font-size: 13px;
+        margin-top: -10px;
+    }
+
+    .home-buttons{
+        margin-top: -13px;
     }
 
     .about,
@@ -1175,7 +1186,9 @@ h3 span {
         padding: 15px;
     }
 
-    .popup-content {
+   .popup-content {
+        width: 300px;
+        height: auto;
         padding: 25px 20px;
     }
 }

@@ -468,14 +468,14 @@
             method="POST"
             class="contact-form"
           >
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input
+            <input type="text" name="name" class="pointer" placeholder="Your Name" required />
+            <input class="pointer"
               type="email"
               name="email"
               placeholder="Your Email"
               required
             />
-            <textarea
+            <textarea class="pointer"
               name="message"
               rows="6"
               placeholder="Your Message"
@@ -485,8 +485,11 @@
             <button type="submit" class="btnCont">Send Message</button>
             <p id="form-status" class="status-message"></p>
           </form>
+        </div>
+      </div>
+    </section>
 
-          <div id="success-popup" class="success-popup">
+    <div id="success-popup" class="success-popup">
             <div class="popup-content">
               <i class="fa-solid fa-circle-check"></i>
               <h2>Message Sent!</h2>
@@ -494,9 +497,6 @@
               <button id="close-popup">OK</button>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
     <script src="script.js"></script>
   </body>
 </html>
